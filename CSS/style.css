@@ -4,35 +4,36 @@
 body{
     margin: 0;
     padding: 0;
+    background: linear-gradient(#260084,#F052F8);
 }
-/*-------MOVIL VERSION----------*/
-
 #header{
-    background-color: lightgreen;
     grid-area: header;
- 
+    position: sticky;
+    top: 0;
+    padding: 5px 0;
 }
 
 #main{
-    background-color: lightseagreen;
+   
     grid-area: main;
 }
 
 #sidebar{
-    background-color: lightslategray;
+   
     grid-area: sidebar;
 }
 
 #footer{
-    background-color: lightyellow;
+    
     grid-area: footer;
 }
 
+/*LAYOUT DE LA PAGINA*/
 .grid_container{
     display: grid;
     grid-template: 
     "header"  40px
-    "main"    80vh
+    "main"    75vh
     "sidebar" 95vh
     "footer"  5vh 
     ;
@@ -42,15 +43,43 @@ body{
 .container_header{
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
     flex-wrap: wrap;
 }
 
 .flex_item{
-    width: 90px;
+    width: 50%;
     text-align: center;
     
 }
 
+.container_header div{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.button_nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.button_nav li a{
+    padding: 6px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.button_nav li a:hover,
+.button_nav li a.active{
+    background-color: #fff;
+    color: #00004c;
+}   
