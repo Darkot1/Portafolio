@@ -10,7 +10,7 @@ body{
     grid-area: header;
     position: sticky;
     top: 0;
-    padding: 5px 0;
+    padding: 8px 0;
 }
 
 #main{
@@ -80,6 +80,6 @@ body{
 
 .button_nav li a:hover,
 .button_nav li a.active{
-    background-color: #fff;
-    color: #00004c;
+    background-color: #48156D;
+    color: #CB15B7;
 }   
