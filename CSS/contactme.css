@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Dar propiedades a los contenedores del grid*/
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#260084,#8c3ae9);
+    
+}
+#header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    padding: 8px 0;
+    z-index: 100;
+}
+
+#main{
+    grid-area: main;
+}
+
+/*LAYOUT DE LA PAGINA*/
+.grid_container{
+    display: grid;
+    grid-template: 
+    "header"  40px
+    "main"    auto
+    ;
+    height: 100vh;
+}
+
+
+
+/*HEADER Y BOTONES DE NAVEGACION*/
+.container_header{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+.flex_item{
+    width: 50%;
+    text-align: center;
+    
+}
+
+.container_header div{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.button_nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+.button_nav li a{
+    padding: 6px 15px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.button_nav li a:hover,
+.button_nav li a.active{
+    background-color: #48156D;
+    color: #CB15B7;
+    z-index: 1000;
+}   
+
+/*SECCION MAIN*/
+.parallax{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    mask-image: linear-gradient(#000 80%, transparent);
+    
+}
+
