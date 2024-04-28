@@ -246,7 +246,7 @@ body{
 }
 
 .carrusel a:hover{
-    width: 50%;
+    width: 100%;
     margin: 0 12px;
     filter: drop-shadow(#000 0 0 30px) 
 }
