@@ -27,13 +27,17 @@ body{
     justify-content: center;
     align-items: center;
 }
+#footer{
+    grid-area: footer;
+}
 
 /*LAYOUT DE LA PAGINA*/
 .grid_container{
     display: grid;
     grid-template: 
-    "header"  40px
+    "header"  80px
     "main"    auto
+    "footer"  50px
     ;
     height: 100vh;
 }
@@ -77,6 +81,7 @@ body{
     text-decoration: none;
     color: #fff;
     border-radius: 20px;
+    font-size: 20px;
 }
 
 .button_nav li a:hover,
@@ -88,14 +93,83 @@ body{
 
 /*SECCION MAIN*/
 .parallax{  
-    width: 80%;
-    height: 50%;
-}
-
-
-.contact{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+
+.contact{
+    width: 30%;
+    height: 80%;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact form input, textarea{
+    padding: 10px 14px;
+    background: linear-gradient(#8c3ae9, #48156D);
+    color: #fffd;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 14px;
+    box-shadow: 0 0 15px #48156D ;
+}
+
+fieldset{
+    border-left: transparent;
+    border-right: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #25008433;
+    backdrop-filter: blur(2px);
+    color: #fffd;
+    border-color: #48156D;
+    font-size: 22px;
+}
+
+form button{
+    margin-top: 60px;
+    color: #fffd;
+    font-size: 18px;
+    background: linear-gradient(#8c3ae9, #48156D);
+    border: transparent;
+    padding: 12px 0;
+    border-radius: 20px;
+}
+
+form button:hover{
+    background: linear-gradient(#9437ff, #330057);;
+    cursor:pointer;
+}
+
+
+/*FOOTER SECCION*/
+.container_footer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icons_redes{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
