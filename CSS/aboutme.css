@@ -22,10 +22,9 @@ body{
     grid-area: main;
     background-image: url(../images/estrellas.png);
     background-size: cover;
-    mask-image: linear-gradient(#000 70%, transparent);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 /*LAYOUT DE LA PAGINA*/
@@ -33,9 +32,7 @@ body{
     display: grid;
     grid-template: 
     "header"  80px
-    "main"    auto
-    ;
-    height: 100vh;
+    "main"    100vh
 }
 
 
@@ -119,8 +116,7 @@ body{
     width: 60%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    gap: 100px;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -249,22 +245,39 @@ svg{
     justify-content: space-evenly;
 }
 
-.list_hobbies{
+.list_hobbies, .soft_skills, .goals{
     width: 50%;
     color: #fffd;
 }
-.list_hobbies h3{
+.list_hobbies h3, .soft_skills h3, .goals h3{
     font-size: 30px;
     margin: 0;
     margin-bottom: 20px;
     color: #1b015c;
 }
-.list_hobbies ul{
+.list_hobbies ul, .soft_skills ul, .goals ul{
     margin: 0;
     font-size: 18px;
     list-style:square;
 }
 
-.space{
+.space, .goals{
     width: 20%;
 }
+
+.space h3{
+    color: #1b015c;
+    font-size: 30px;
+    margin: 0;
+}
+
+.space p{
+    color: #fffd;
+    font-size: 18px;
+}
+
+.container_soft_skills{
+    display: flex;
+    justify-content: space-evenly;
+}
+
